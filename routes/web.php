@@ -15,8 +15,9 @@ use App\Http\Controllers\PianoController;
 */
 
 Route::get('/', function () {
-    echo date_default_timezone_get();
     return view('welcome');
 });
 
 Route::get('/pianos', [PianoController::class, 'index']);
+
+Route::get('/events/select', [PianoController::class, 'role']);
