@@ -11,4 +11,9 @@ class PianoController extends Controller
     {
         return view('pianos/index')->with(['pianos' => $piano->get()]);
     }
+    
+    public function role()
+    {
+        return view('events/role');
+    }
 }
