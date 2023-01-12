@@ -9,11 +9,15 @@
     </head>
     <body>
         <h1>どのピアノへ聴きに行きますか？</h1>
-        <div class="piano">
-            <select name="piano" size="1">
-
+       <form action="{piano_id}/datetime" method="POST">
+            @csrf
+            <select name="piano_id" size="1">
+                @foreach($pianos as $piano)
+                    <option value="{{ $piano->id }}">{{ $piano->name }}</option>
+                @endforeach
             </select>
-        </div>
+            <input type="submit" value="次へ"/>
+        </form>
     </body>
 </html>
 </x-app-layout>

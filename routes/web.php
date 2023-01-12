@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PianoController;
+use App\Http\Controllers\EventController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,9 +20,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/events/role', [PianoController::class, 'events_role'])->name('role');
-
 Route::get('/pianos', [PianoController::class, 'pianos']);
+
+Route::get('/events/role', [EventController::class, 'events_role'])->name('role');
+
+Route::post('/events/{role}/piano', [EventController::class, 'events_role_piano']);
+
+//Route::get('/events/listener/piano', [EventController::class, 'nextAction']);
+
+Route::post('/events/{role}/{piano}/datetime', [EventController::class, 'events_role_piano_datetime']);
+
+//Route::get('/events/listener/{piano}/datetime', [EventController::class, 'events_listener_piano_date']);
+
+Route::post('/recorded', [EventController::class, 'recorded']);
 
 
 Route::get('/dashboard', function () {
