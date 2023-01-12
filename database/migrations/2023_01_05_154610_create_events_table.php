@@ -18,8 +18,7 @@ return new class extends Migration
             $table->foreignId('user_id');
             $table->integer('role');
             $table->foreignId('piano_id');
-            $table->date('date');
-            $table->integer('time');
+            $table->datetime('datetime');
             $table->timestamps();
             $table->softDeletes();
         });
