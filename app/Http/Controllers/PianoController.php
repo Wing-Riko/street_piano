@@ -9,6 +9,7 @@ class PianoController extends Controller
 {
     public function pianos(Piano $piano)
     {
+        dd($piano::count());
         return view('pianos/pianos')->with(['pianos' => $piano->get()]);
     }
     

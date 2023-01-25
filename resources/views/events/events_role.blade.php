@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>ピアノを弾きますか？聴きますか？</h1>
-        <form action="{role}/piano" method="POST">
+        <form action="role/piano" method="POST">
             @csrf
             <select name="role" size="1"> 
                 <option value="0">弾く</option>

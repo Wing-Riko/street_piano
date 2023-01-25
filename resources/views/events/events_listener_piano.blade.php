@@ -9,8 +9,9 @@
     </head>
     <body>
         <h1>どのピアノへ聴きに行きますか？</h1>
-       <form action="{piano_id}/datetime" method="POST">
+        <form action="piano/datetime" method="POST">
             @csrf
+            <input type="readonly" name="event[role]" value={{$role}}>
             <select name="piano_id" size="1">
                 @foreach($pianos as $piano)
                     <option value="{{ $piano->id }}">{{ $piano->name }}</option>

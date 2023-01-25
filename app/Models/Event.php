@@ -10,6 +10,9 @@ class Event extends Model
     use HasFactory;
     
     protected $fillable = [
-    'piano_id'
+        'user_id',
+        'role',
+        'piano_id',
+        'datetime'
     ];
 }
