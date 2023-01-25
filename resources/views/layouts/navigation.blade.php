@@ -18,6 +18,12 @@
                     <x-nav-link :href="route('role')" :active="request()->routeIs('role')">
                         {{ __('登録する') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('pianos')" :active="request()->routeIs('pianos')">
+                        {{ __('ピアノリスト') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('events')" :active="request()->routeIs('events')">
+                        {{ __('登録管理') }}
+                    </x-nav-link>
                 </div>
             </div>
 

@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
-        <h1>ピアノリスト</h1>
+        <h1 class='text-4xl p-4'>ピアノリスト</h1>
         <div class='pianos'>
             @foreach ($pianos as $piano)
                 <div class='piano'>
