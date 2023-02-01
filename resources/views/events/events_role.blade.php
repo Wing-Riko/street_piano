@@ -8,8 +8,8 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
-        <h1>ピアノを弾きますか？聴きますか？</h1>
-        <form action="role/piano" method="POST">
+        <h1 class='text-xl pl-10'>ピアノを弾きますか？聴きますか？</h1>
+        <form class='pl-10 py-1' action="role/piano" method="POST">
             @csrf
             <select name="role" size="1"> 
                 <option value="0">弾く</option>

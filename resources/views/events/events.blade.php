@@ -8,8 +8,8 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
-        <h1>登録管理</h1>
-        <div class='pianos'>
+        <h1 class='text-4xl pl-10'>登録管理</h1>
+        <div class='pianos pl-10 py-1'>
             @foreach ($events as $event)
                 <div class='event'>
                     <h2 class='piano'>{{ $event->piano_id }}</h2>
