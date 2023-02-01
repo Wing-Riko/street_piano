@@ -8,8 +8,8 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
-        <h1>どのピアノを弾きに行きますか？</h1>
-        <form action="piano/datetime" method="POST">
+        <h1 class='text-xl pl-10'>どのピアノを弾きに行きますか？</h1>
+        <form class='pl-10 py-1' action="piano/datetime" method="POST">
             @csrf
             <input type="readonly" name="event[role]" value={{$role}}>
             <select name="piano_id" size="1">
